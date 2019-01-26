@@ -85,6 +85,13 @@ header {
 
 }
 
+.switch:hover {
+
+    color: darkgreen;
+    font-weight: 800;
+
+}
+
 
 #about {
 
