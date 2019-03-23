@@ -1,90 +1,159 @@
 <!DOCTYPE html>
 
-<html lang="en">
+<html lang="en-us">
 
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    
-    <!----attempting to  folllow base form of the recommended HW while adding my own lil something something--> 
-    
-    <link rel="stylesheet" type="text/css" type="text/css" href="assets/css/style.css">
-    
-    <title>ASP_Basic Portfolio</title>
+
+    <!-- Css reset -->
+    <link rel="stylesheet" type="text/css" href="assets/reset.css">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Css style -->
+    <link rel="stylesheet" type="text/css" href="assets/stylesheet.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <!-- Moment.js Reference -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
+    <!-- google font -->
+    <link href="https://fonts.googleapis.com/css?family=Special+Elite" rel="stylesheet">
+
+    <title>AndrewPackPortfolio</title>
 
 </head>
 
 <body>
 
-    <Header>
+    <nav class="navbar navbar-expand navbar-light bg">
+        <a class="navbar-brand" href="#">
+            <img src="assets/ap-logo.png" width="60" height="60" alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#portfolio">Projects <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="mailto:thepackpater@gmail.com?Subject=Portfolio%20Contact" target="_top"><i class="fas fa-envelope"></i></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="https://github.com/ThePackPater" target="_blank"><i
+                            class="fab fa-github-square"></i></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="https://www.linkedin.com/in/andrew-pack-045522177?trk=profile-badge" target="_blank"><i class="fab fa-linkedin"></i></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="container-fluid" id="Home">
+        <div class="polaroid">
+            <img id="me" src="assets/self.jpg" alt="pic of me" style="width:100%">
+            <p><br></p>
+        </div>
+        <div id="notecard">
+            <h1 class="display-4">Andrew Pack</h1>
+            <h4> <a href="mailto:thepackpater@gmail.com?Subject=Portfolio%20Contact" target="_top">thepackpater@gmail.com</a>
 
-        <Div id="nametab">
+                <a href="sms://+16155404302">(615)540-4302</a></h4>
+            <p class="lead"><b>A new Developler bringing old school sensibility and style to any team or project. My
+                    years of training and experience in Customer Service, Team Management, Service/Maintenance and
+                    Installation of Business IT Systems combined with my new passion for developement bring an out of
+                    the box solution
+                    provoking approach to production service and marketing of software development. I am a multipurpose
+                    asset with a fun easy nature who knows how to keep a team motivated and on track.</b></p>
+            <hr class="my-4">
+            <h2>Growing Proficencies</h2>
+            <p class="lead"><b>
+                    <i class="fas fa-arrow-alt-circle-right"></i> HTML
+                    <i class="fas fa-arrow-alt-circle-right"></i> CSS
+                    <i class="fas fa-arrow-alt-circle-right"></i> Javascript
+                    <i class="fas fa-arrow-alt-circle-right"></i> Bootstrap
+                    <i class="fas fa-arrow-alt-circle-right"></i> Jquery
+                    <i class="fas fa-arrow-alt-circle-right"></i> NodeJs
+                </b></p>
+            <hr class="my-4">
+            <h2>Proficencies</h2>
+            <p class="lead"><b>
+                    <i class="fas fa-arrow-alt-circle-right"></i> System Intergration
+                    <i class="fas fa-arrow-alt-circle-right"></i> VOIP Systems
+                    <i class="fas fa-arrow-alt-circle-right"></i> HFC Plant Systems
+                    <i class="fas fa-arrow-alt-circle-right"></i> Data/Coax/DV Cabling
+                    <i class="fas fa-arrow-alt-circle-right"></i> Network Architecture
+                    <i class="fas fa-arrow-alt-circle-right"></i> Network Hardware
+                    <i class="fas fa-arrow-alt-circle-right"></i> Business Development
+                    <i class="fas fa-arrow-alt-circle-right"></i> Web Marketing
+                    <i class="fas fa-arrow-alt-circle-right"></i> Wireless Networking
+                    <i class="fas fa-arrow-alt-circle-right"></i> Audio/Video/Security
+                </b></p>
+        </div>
+    </div>
 
-            Andy Pack
+    <div class="container-fluid" id="fileFolder">
+        <ul class="tabs group">
+            <li class="active" id="port"><a href="#">Projects (tap pic to view)</a></li>
+        </ul>
+        <div class="container-fluid" id="portfolio">
+            <div id="grid">
+                <a class="grid2" target="_blank" href="https://thepackpater.github.io/Group-Project-1/">
+                    <img src="assets/run.gif " height="350px " width="550px ">
+                    <figcaption>Run For Your Life</figcaption>
+                </a>
+                <a class="grid2 " target="_blank" href="https://thepackpater.github.io/GifGalaxy/">
+                    <img src="assets/galaxy.gif " height="350px " width="550px ">
+                    <figcaption>Gif Galaxy</figcaption>
+                </a>
+                <a class="grid2 " target="_blank" href="https://thepackpater.github.io/ChooChooSchedule_ASP/">
+                    <img src="assets/airport.gif " height="350px " width="550px ">
+                    <figcaption>Train Scheduler</figcaption>
+                </a>
+                <a class="grid2 " target="_blank" href="https://thepackpater.github.io/TriviaGame-ASP/">
+                    <img src="assets/city.gif " height="350px " width="550px ">
+                    <figcaption>Funny Law Trivia</figcaption>
+                </a>
+                <a class="grid2 " target="_blank" href="https://thepackpater.github.io/RockPaperScissorsGame/">
+                    <img src="assets/ruins.gif " height="350px " width="550px ">
+                    <figcaption>Rock Paper Scissors</figcaption>
+                </a>
+                <a class="grid2 " target="_blank" href="# ">
+                    <img src="assets/industrial.gif " height="350px " width="550px ">
+                    <figcaption>Next Group Project</figcaption>
+                </a>
+            </div>
+        </div>
+    </div>
 
-        </Div>
-
-        <nav class="transfer">
-                              
-            <a class="switch" href="index.html" "target_blank">About</a>
-                
-            <a class="switch" href="portfolio.html" "target_blank">Portfolio</a>
-            
-            <a class="switch" href="contact.html" "target_blank">Contact</a>
-           
-        </nav>
-
-    </Header>
-    
-    <Section id="about"><br>
-        
-        <h1>About Me</h1>
-        
-        <div id="line"></div>
-        
-        <article>
-
-            <p>
-
-                <img src="assets/images/hulk.jpg" alt="https://www.facebook.com/photo.php?fbid=10203323596051024&set=pb.1844243388.-2207520000.1548372950.&type=3&size=550%2C549" height="300px" width="300px"> 
-
-     
-                Hulk Smash.. Hulk.... SMASH.. Hulk Smash, then Hulk smash... Hulk Smash.. Hulk Smash... Hulk Smash Smash Smash.. Hulk, SMASH... Hulk Smash.
-                Hulk Smash.. Hulk.... SMASH.. Hulk Smash, then Hulk smash... Hulk Smash.. Hulk Smash... Hulk Smash Smash Smash.. Hulk, SMASH... Hulk Smash
-                Hulk Smash.. Hulk.... SMASH.. Hulk Smash, then Hulk smash... Hulk Smash.. Hulk Smash... Hulk Smash Smash Smash.. Hulk, SMASH... Hulk Smash
-                Hulk Smash.. Hulk.... SMASH.. Hulk Smash, then Hulk smash... Hulk Smash.. Hulk Smash... Hulk Smash Smash Smash.. Hulk, SMASH... Hulk Smash
-                Hulk Smash.. Hulk.... SMASH.. Hulk Smash, then Hulk smash... Hulk Smash.. Hulk Smash... Hulk Smash Smash Smash.. Hulk, SMASH... Hulk Smash
-                Hulk Smash.. Hulk.... SMASH.. Hulk Smash, then Hulk smash... Hulk Smash.. Hulk Smash... Hulk Smash Smash Smash.. Hulk, SMASH... Hulk Smash
-                Hulk Smash.. Hulk.... SMASH.. Hulk Smash, then Hulk smash... Hulk Smash.. Hulk Smash... Hulk Smash Smash Smash.. Hulk, SMASH... Hulk Smash
-                Hulk Smash.. Hulk.... SMASH.. Hulk Smash, then Hulk smash... Hulk Smash.. Hulk Smash... Hulk Smash Smash Smash.. Hulk, SMASH... Hulk Smash
-                Hulk Smash.. Hulk.... SMASH.. Hulk Smash, then Hulk smash... Hulk Smash.. Hulk Smash... Hulk Smash Smash Smash.. Hulk, SMASH... Hulk SmashHulk Smash.. Hulk.... SMASH.. Hulk Smash, then Hulk smash... Hulk Smash.. Hulk Smash... Hulk Smash Smash Smash.. Hulk, SMASH... Hulk Smash
-                Hulk Smash.. Hulk.... SMASH.. Hulk Smash, then Hulk smash... Hulk Smash.. Hulk Smash... Hulk Smash Smash Smash.. Hulk, SMASH... Hulk Smash
-                Hulk Smash.. Hulk.... SMASH.. Hulk Smash, then Hulk smash... Hulk Smash.. Hulk Smash... Hulk Smash Smash Smash.. Hulk, SMASH... Hulk Smash
-                Hulk Smash.. Hulk.... SMASH.. Hulk Smash, then Hulk smash... Hulk Smash.. Hulk Smash... Hulk Smash Smash Smash.. Hulk, SMASH... Hulk Smash
-                Hulk Smash.. Hulk.... SMASH.. Hulk Smash, then Hulk smash... Hulk Smash.. Hulk Smash... Hulk Smash Smash Smash.. Hulk, SMASH... Hulk Smash
-                Hulk Smash.. Hulk.... SMASH.. Hulk Smash, then Hulk smash... Hulk Smash.. Hulk Smash... Hulk Smash Smash Smash.. Hulk, SMASH... Hulk Smash
-                Hulk Smash.. Hulk.... SMASH.. Hulk Smash, then Hulk smash... Hulk Smash.. Hulk Smash... Hulk Smash Smash Smash.. Hulk, SMASH... Hulk Smash
-                <br>
-                Hulk Smash.. Hulk.... SMASH.. Hulk Smash, then Hulk smash... Hulk Smash.. Hulk Smash... Hulk Smash Smash Smash.. Hulk, SMASH... Hulk Smash.
-                Hulk Smash.. Hulk.... SMASH.. Hulk Smash, then Hulk smash... Hulk Smash.. Hulk Smash... Hulk Smash Smash Smash.. Hulk, SMASH... Hulk Smash
-                
-            </p>
-
-        </article>    
-
-    </Section><br>
-   
-
-    <footer>
-
-        <p></p>
-
-        <p></p>
-        
+    <footer id="contactMe">
+        <ul class="fUlist">
+            <li class="liF">
+                <a class="aLink" href="#">"Andy" Pack <img src="assets/ap-logo.png" width="30" height="30" alt=""><span
+                        class="sr-only">(current)</span></a>
+            </li>
+            <li class="liF">
+                <a href="sms://+16155404302" class="aLink"> <i class="fas fa-sms"></i></a>
+            </li>
+            <li class="liF">
+                <a class="aLink" href="mailto:thepackpater@gmail.com?Subject=Portfolio%20Contact" target="_top"><i
+                        class="fas fa-envelope"></i></a>
+            </li>
+        </ul>
     </footer>
 
+
+    <!-- js/Jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js "></script>
+    <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
+    <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase.js"></script>
 </body>
 
 </html>
