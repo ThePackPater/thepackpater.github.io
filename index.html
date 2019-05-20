@@ -34,64 +34,39 @@
   </head>
 
   <body>
-<!-- Navbar -->
-    <nav class="navbar navbar-expand navbar-light bg">
-      <a class="aLink" href="#"
-        ><b>"Andy" Pack </b
-        ><img src="assets/ap-logo.png" width="30" height="30" alt="" /><span
-          class="sr-only"
-          >(current)</span
-        ></a
-      >
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarNav"
-        aria-controls="navbarNav"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item active">
-            <a
-              class="aLink"
-              href="mailto:thepackpater@gmail.com?Subject=Portfolio%20Contact"
-              target="_top"
-              ><i class="fas fa-envelope"></i
-            ></a>
-          </li>
-          <li class="nav-item active">
-            <a
-              class="aLink"
-              href="https://www.linkedin.com/in/andrew-pack-045522177?trk=profile-badge"
-              target="_blank"
-              ><i class="fab fa-linkedin"></i
-            ></a>
-          </li>
-          <li class="nav-item active">
-            <a
-              class="aLink"
-              href="https://github.com/ThePackPater"
-              target="_blank"
-              ><i class="fab fa-github-square"></i
-            ></a>
-          </li>
-        </ul>
-      </div>
+
+<!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand js-scroll-trigger" href="#">"Andy" Pack</a>
+                <img src="assets/ap-logo.png" width="30" height="30" alt="" />
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            Menu
+            <i class="fas fa-bars"></i>
+          </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link js-scroll-trigger" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link js-scroll-trigger" href="#projects">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
     </nav>
-    <br />
-    <br />
+    
 
 <!-- Header -->
     <header class="masthead">
       <div class="container d-flex h-100 align-items-center">
         <div class="mx-auto text-center">
           <h1 class="mx-auto my-0 text">Hi, I'm Andy!</h1>
-          <h2 class="text-red-50 mx-auto mt-2 mb-5"><b> I'm a shiny new full stack developer. Thanks for stopping by my page.
+          <h2 class="text-50 mx-auto mt-2 mb-5"><b> I'm a shiny new full stack developer with a passion for learning. Thanks for stopping by my page.
           </b></h2>
           <a href="#about" class="btn btn-danger js-scroll-trigger"
             >About Me</a>
@@ -119,25 +94,29 @@
     </section>
 
 <!-- Projects Section -->
-    <section id="projects" class="projects-section bg-light">
+    <section id="projects" class="projects-section">
         <div class="container">
     
-<!-- Featured Project Row -->
-    <div class="row align-items-center no-gutters mb-4 mb-lg-5">
-        <div class="col-xl-8 col-lg-7">
-            <img class="img-fluid mb-3 mb-lg-0" src="assets/city.gif" alt="">
+    <!-- Featured Project Row -->
+        <div class="row justify-content-center no-gutters">
+        <div class="col-lg-6">
+            <img class="img-fluid" src="assets/city.gif" alt="">
         </div>
-        <div class="col-xl-4 col-lg-5">
-            <div class="featured-text text-center text-lg-left">
-                <h4>Production and Dedication</h4>
-                <p class="text-black-50 mb-0">ope things mi boom shackalack maurizzle posuere bibendizzle. Fo shizzle lacinia viverra pot. Bow wow wow id enizzle izzle leo sodales that's the shizzle. Own yo' dope, maurizzle black dapibizzle fo shizzle, nulla fo bibendizzle
-                    metus, izzle venenatis augue ass izzle arcu.</p>
+        <div class="col-lg-6 order-lg-first">
+            <div class="bg-black text-center h-100 project">
+                <div class="d-flex h-100">
+                    <div class="project-text w-100 my-auto text-center text-lg-right">
+                        <h4 class="text-white">Old School in a New Age</h4>
+                        <p class="mb-0 text-white-50"></p>
+                        <hr class="d-none d-lg-block mb-0 mr-0">
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
+        </div>
     
-<!-- Project One Row -->
-    <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
+    <!-- Project One Row -->
+        <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
         <div class="col-lg-6">
             <img class="img-fluid" src="assets/coffee.jpg" alt="">
         </div>
@@ -145,17 +124,16 @@
             <div class="bg-black text-center h-100 project">
                 <div class="d-flex h-100">
                     <div class="project-text w-100 my-auto text-center text-lg-left">
-                        <h4 class="text-white">Pet Party APP</h4>
+                        <h4 class="text-white">APPs in Development</h4>
                         <p class="mb-0 text-white-50">ADD TEXT</p>
                         <hr class="d-none d-lg-block mb-0 ml-0">
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    
-<!-- Project Two Row -->
-    <div class="row justify-content-center no-gutters">
+        </div>
+    <!-- Project Two Row -->
+        <div class="row justify-content-center no-gutters">
         <div class="col-lg-6">
             <img class="img-fluid" src="assets/donut2.png" alt="">
         </div>
@@ -163,39 +141,20 @@
             <div class="bg-black text-center h-100 project">
                 <div class="d-flex h-100">
                     <div class="project-text w-100 my-auto text-center text-lg-right">
-                        <h4 class="text-white">Run fo Your Life APP</h4>
+                        <h4 class="text-white">Side Projects</h4>
                         <p class="mb-0 text-white-50">ADD TEXT</p>
                         <hr class="d-none d-lg-block mb-0 mr-0">
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+        </div>
     
-    </div>
-</section>
-    
-<!-- Signup Section -->
-    <section id="signup" class="signup-section">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-10 col-lg-8 mx-auto text-center">
-    
-                        <i class="far fa-paper-plane fa-2x mb-2 text-white"></i>
-                        <h2 class="text-white mb-5">What can I do for you?!</h2>
-    
-                        <form class="form-inline d-flex">
-                            <input type="email" class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="inputEmail" placeholder="Enter email address...">
-                            <button type="submit" class="btn btn-primary mx-auto">Hit Me Up</button>
-                        </form>
-    
-                    </div>
-                </div>
-            </div>
+        </div>
     </section>
-    
+
 <!-- Contact Section -->
-    <section class="contact-section bg-black">
+    <section class="contact-section bg-black" id="contact">
             <div class="container">
     
                 <div class="row">
@@ -254,26 +213,36 @@
 <!-- Footer -->
     <footer class="bg-black small text-center text-white-50">
             <div class="container">
-                TreMarProductions 2019
+                TheBearCode 2019
             </div>
+            <ul class="navbar-nav">
+                    <li class="nav-item active">
+                      <a
+                        class="aLink"
+                        href="mailto:thepackpater@gmail.com?Subject=Portfolio%20Contact"
+                        target="_top"
+                        ><i class="fas fa-envelope"></i
+                      ></a>
+                    </li>
+                    <li class="nav-item active">
+                      <a
+                        class="aLink"
+                        href="https://www.linkedin.com/in/andrew-pack-045522177?trk=profile-badge"
+                        target="_blank"
+                        ><i class="fab fa-linkedin"></i
+                      ></a>
+                    </li>
+                    <li class="nav-item active">
+                      <a
+                        class="aLink"
+                        href="https://github.com/ThePackPater"
+                        target="_blank"
+                        ><i class="fab fa-github-square"></i
+                      ></a>
+                    </li>
+                  </ul>
+
     </footer>
-    
-<!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    
-<!-- Plugin JavaScript -->
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-    
-<!-- Custom scripts for this template -->
-    <script src=""></script>
-<!-- linkenIn Badge JS -->
-    <script
-      type="text/javascript"
-      src="https://platform.linkedin.com/badges/js/profile.js"
-      async
-      defer
-    ></script>
 
   </body>
 </html>
