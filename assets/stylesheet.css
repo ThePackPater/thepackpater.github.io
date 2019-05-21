@@ -16,14 +16,10 @@
     z-index: +2;
   }
 
-.navbar-brand {
-  color: red;
-  font-size: 5 rem;
-}
+
 
 .nav-item {
   font: bold;
-  color: black;
 }
 
 .nav-link:hover {
@@ -63,7 +59,7 @@ a {
     font-size: 2.5rem;
     line-height: 2.5rem;
     letter-spacing: 0.8rem;
-    color: crimson;
+    color: red;
 }
   
 .masthead h2 {
