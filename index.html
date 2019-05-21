@@ -4,33 +4,41 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <!-- Css reset -->
+<!-- Css reset -->
     <link rel="stylesheet" type="text/css" href="assets/reset.css" />
-    <!-- Bootstrap -->
+<!-- Bootstrap -->
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
-    <!-- Font Awesome -->
+<!-- Font Awesome -->
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
       integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
       crossorigin="anonymous"
     />
-    <!-- google font -->
+<!-- google font -->
     <link
       href="https://fonts.googleapis.com/css?family=Special+Elite"
       rel="stylesheet"
     />
-    <!-- Css style -->
+<!-- Css style -->
     <link rel="stylesheet" type="text/css" href="assets/stylesheet.css" />
-    <!-- js/Jquery -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js "></script>
-    <!-- Custom scripts for this template -->
-    <script type="text/javascript" src="assets/FE.js"></script>
+<!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.4.0.min.js"
+    integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=" crossorigin="anonymous"></script>
+<!-- bootstrap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+  integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+<!-- bootstrap -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+  integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+  crossorigin="anonymous"></script>
+
     
 
     <title>AndrewPackPortfolio</title>
@@ -39,12 +47,17 @@
   <body>
 
 <!-- Navigation -->
-    <nav class="navbar navbar-expand navbar-dark fixed-top bg" id="mainNav">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg" id="mainNav">
         <a class="navbar-brand" href="#">
             <img src="assets/ap-logo.png" width="60" height="60" alt=""><b>"Andy" Pack</b></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
-        </button>
+        </button> -->
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+        data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+        aria-label="Toggle navigation">
+        Menu <i class="fas fa-bars"></i>
+      </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto">
@@ -77,8 +90,6 @@
           <h1 class="mx-auto my-0 text">Hi, I'm Andy!</h1>
           <h2 class="text-50 mx-auto mt-2 mb-5"><b> I'm a shiny new full stack developer with a passion for learning. Thanks for stopping by my page.
           </b></h2>
-          <!-- <a href="#about" class="btn btn-danger js-scroll-trigger"
-            >About Me</a> -->
             <a type="button" href="#about" class="btn btn-danger btn-lg">About Me</a>
             <a type="button" href="#projects" class="btn btn-info btn-lg">Projects</a>
             <a type="button" href="#contact" class="btn btn-warning btn-lg">Let's Connect</a>  
@@ -138,7 +149,7 @@
                     <div class="project-text w-100 my-auto text-center text-lg-left">
                         <h4 class="text-white">Dev Projects</h4>
                         <p class="mb-0 text-white-50">click the Button</p>
-                        <button type="button" class="btn btn-info btn-sm" id="projects">PROJECTS</button>
+                        <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#projectModal" id="projects">PROJECTS</button>
                         <hr class="d-none d-lg-block mb-0 ml-0">
                     </div>
                 </div>
@@ -156,7 +167,7 @@
                     <div class="project-text w-100 my-auto text-center text-lg-right">
                         <h4 class="text-white">Growing Skills</h4>
                         <p class="mb-0 text-white-50">Click the Button</p>
-                        <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#exampleModalScrollable" id="skills">SKILLS</button>
+                        <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#skillModal" id="skills">SKILLS</button>
                         <hr class="d-none d-lg-block mb-0 mr-0">
                     </div>
                 </div>
@@ -233,27 +244,81 @@
     </footer>
 
 <!-- Skills Modal -->
-      <div class="modal fade" id="skillModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-scrollable" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalScrollableTitle">Modal title</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body">
-              ...
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-primary">Save changes</button>
-            </div>
-          </div>
+<div class="modal" tabindex="-1" role="dialog" id="skillModal">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content" style="background:url(assets/index.jpg)";>
+        <div class="modal-header">
+          <h5 class="modal-title">Skills</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <p class="lead"><b>
+                <i class="fas fa-arrow-alt-circle-right"></i> HTML
+                <i class="fas fa-arrow-alt-circle-right"></i> CSS
+                <i class="fas fa-arrow-alt-circle-right"></i> Javascript
+                <i class="fas fa-arrow-alt-circle-right"></i> Bootstrap
+                <i class="fas fa-arrow-alt-circle-right"></i> Jquery
+                <i class="fas fa-arrow-alt-circle-right"></i> NodeJs
+                <i class="fas fa-arrow-alt-circle-right"></i> ExpressJS
+                <i class="fas fa-arrow-alt-circle-right"></i> Firebase
+                <i class="fas fa-arrow-alt-circle-right"></i> MySQL
+                <i class="fas fa-arrow-alt-circle-right"></i> Handlebars.JS
+                <i class="fas fa-arrow-alt-circle-right"></i> MongoDB
+                <i class="fas fa-arrow-alt-circle-right"></i> Sequleize
+                <i class="fas fa-arrow-alt-circle-right"></i> ReactJS
+                <i class="fas fa-arrow-alt-circle-right"></i> ES6
+                <br>
+                <i class="fas fa-arrow-alt-circle-right"></i>More to come!!
+            </b></p>
+        </div>  
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
         </div>
       </div>
+    </div>
+</div> 
 
 <!-- Projects Modal -->
+<div class="modal" tabindex="-1" role="dialog" id="projectModal">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content" style="background:url(assets/index.jpg)";>
+        <div class="modal-header">
+          <h5 class="modal-title">Projects</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <a class="grid2" target="_blank" href="https://petpartyaba.herokuapp.com/">
+                <img src="assets/logo.jpg " class="img-thumbnail">
+                <figcaption>Pet Party</figcaption>
+            </a>
+            <a class="grid2" target="_blank" href="https://geek-friendfinder.herokuapp.com/">
+                <img src="assets/GFFinder.PNG " class="img-thumbnail">
+                <figcaption>Geeky Friend Finder</figcaption>
+            </a>
+            <a class="grid2" target="_blank" href="https://thepackpater.github.io/Group-Project-1/">
+                <img src="assets/RFYLife.PNG" class="img-thumbnail">
+                <figcaption>Run For Your Life</figcaption>
+            </a>
+            <a class="grid2" target="_blank" href="https://geekburgers.herokuapp.com/">
+                <img src="assets/GeekBurger.PNG" class="img-thumbnail">
+                <figcaption>Geek Burgers</figcaption>
+            </a>
+           
+
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+</div> 
+
+<!-- Custom scripts for this template -->
+<script type="text/javascript" src="assets/FE.js"></script>
 
   </body>
 </html>
