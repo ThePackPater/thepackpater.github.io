@@ -13,8 +13,6 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
-    <!-- Css style -->
-    <link rel="stylesheet" type="text/css" href="assets/stylesheet.css" />
     <!-- Font Awesome -->
     <link
       rel="stylesheet"
@@ -22,13 +20,13 @@
       integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
       crossorigin="anonymous"
     />
-    <!-- Moment.js Reference -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
     <!-- google font -->
     <link
       href="https://fonts.googleapis.com/css?family=Special+Elite"
       rel="stylesheet"
     />
+      <!-- Css style -->
+      <link rel="stylesheet" type="text/css" href="assets/stylesheet.css" />
 
     <title>AndrewPackPortfolio</title>
   </head>
@@ -36,30 +34,36 @@
   <body>
 
 <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
-            <div class="container">
-                <a class="navbar-brand js-scroll-trigger" href="#">"Andy" Pack</a>
-                <img src="assets/ap-logo.png" width="30" height="30" alt="" />
-                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-            Menu
-            <i class="fas fa-bars"></i>
-          </button>
-                <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item">
-                            <a class="nav-link js-scroll-trigger" href="#about">About</a>
+    <nav class="navbar navbar-expand navbar-dark fixed-top bg" id="mainNav">
+        <a class="navbar-brand" href="#">
+            <img src="assets/ap-logo.png" width="60" height="60" alt=""><b>"Andy" Pack</b></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                            <a class="nav-link active" href="https://www.linkedin.com/in/andrew-pack-045522177?trk=profile-badge" target="_blank">
+                                <i class="fab fa-linkedin"></i></a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link js-scroll-trigger" href="#projects">Projects</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
-                        </li>
-                    </ul>
-                </div>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="https://github.com/ThePackPater" target="_blank">
+                            <i class="fab fa-github-square"></i></a>
+                    </li>
+                </ul>
             </div>
+        </div>
     </nav>
-    
 
 <!-- Header -->
     <header class="masthead">
@@ -68,8 +72,11 @@
           <h1 class="mx-auto my-0 text">Hi, I'm Andy!</h1>
           <h2 class="text-50 mx-auto mt-2 mb-5"><b> I'm a shiny new full stack developer with a passion for learning. Thanks for stopping by my page.
           </b></h2>
-          <a href="#about" class="btn btn-danger js-scroll-trigger"
-            >About Me</a>
+          <!-- <a href="#about" class="btn btn-danger js-scroll-trigger"
+            >About Me</a> -->
+            <a type="button" href="#about" class="btn btn-danger btn-lg">About Me</a>
+            <a type="button" href="#projects" class="btn btn-info btn-lg">Projects</a>
+            <a type="button" href="#contact" class="btn btn-warning btn-lg">Let's Connect</a>  
         </div>
       </div>
     </header>
@@ -107,7 +114,7 @@
                 <div class="d-flex h-100">
                     <div class="project-text w-100 my-auto text-center text-lg-right">
                         <h4 class="text-white">Old School in a New Age</h4>
-                        <p class="mb-0 text-white-50"></p>
+                        <p class="mb-0 text-white-50">I have the advantage of entering software development after years of management and IT experience. This gives me both a passion for learning and the ability to communicate and work in a clear goal oriented fashion with a team or individually.</p>
                         <hr class="d-none d-lg-block mb-0 mr-0">
                     </div>
                 </div>
@@ -124,8 +131,9 @@
             <div class="bg-black text-center h-100 project">
                 <div class="d-flex h-100">
                     <div class="project-text w-100 my-auto text-center text-lg-left">
-                        <h4 class="text-white">APPs in Development</h4>
-                        <p class="mb-0 text-white-50">ADD TEXT</p>
+                        <h4 class="text-white">Dev Projects</h4>
+                        <p class="mb-0 text-white-50">click the Button</p>
+                        <button type="button" class="btn btn-info btn-sm" id="projects">PROJECTS</button>
                         <hr class="d-none d-lg-block mb-0 ml-0">
                     </div>
                 </div>
@@ -141,8 +149,9 @@
             <div class="bg-black text-center h-100 project">
                 <div class="d-flex h-100">
                     <div class="project-text w-100 my-auto text-center text-lg-right">
-                        <h4 class="text-white">Side Projects</h4>
-                        <p class="mb-0 text-white-50">ADD TEXT</p>
+                        <h4 class="text-white">Growing Skills</h4>
+                        <p class="mb-0 text-white-50">Click the Button</p>
+                        <button type="button" class="btn btn-info btn-sm" id="skills">SKILLS</button>
                         <hr class="d-none d-lg-block mb-0 mr-0">
                     </div>
                 </div>
@@ -239,6 +248,41 @@
                   </ul>
 
     </footer>
+
+<!-- Skills Modal -->
+    <div class="modal" tabindex="-1" role="dialog" id="skillModal">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content" style="background-color:rgb(151, 198, 209);">
+            <div class="modal-header">
+              <h5 class="modal-title">Growing Skills</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <img src="" class="card-img-top" alt="..." />
+              <h5 class="card-title">FullStack MERN</h5>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item"></li>
+                <li class="list-group-item"></li>
+                <li class="list-group-item"></li>
+              </ul>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                  Close
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+
+<!-- Projects Modal -->
+
+    <!-- js/Jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js "></script>
+    <!-- Custom scripts for this template -->
+        <script src="assets/FE.js"></script>
 
   </body>
 </html>
