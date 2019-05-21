@@ -2,6 +2,7 @@
 #mainNav {
     min-height: 56px;
     background-color: #fff;
+    text-shadow: none;
   }
   
   #mainNav .navbar-toggler {
@@ -182,28 +183,6 @@
     }
   }
   
-  .signup-section {
-    padding: 10rem 0;
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(22, 22, 22, 0.1)), color-stop(75%, rgba(22, 22, 22, 0.5)), to(#161616)), url("../img/bg-signup.jpg");
-    background: linear-gradient(to bottom, rgba(22, 22, 22, 0.1) 0%, rgba(22, 22, 22, 0.5) 75%, #161616 100%), url("../img/bg-signup.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-    background-size: cover;
-  }
-  
-  .signup-section .form-inline input {
-    -webkit-box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
-    box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
-    padding: 1.25rem 2rem;
-    height: auto;
-    font-family: 'Varela Round';
-    font-size: 80%;
-    text-transform: uppercase;
-    letter-spacing: 0.15rem;
-    border: 0;
-  }
-  
   .contact-section {
     padding: 5rem 0 0;
   }
@@ -248,10 +227,9 @@
     color: #fff;
   }
   
-  body {
-    font-family: 'Nunito';
+  /* body {
     letter-spacing: 0.0625em;
-  }
+  } */
   
   a {
     color: #64a19d;
@@ -276,6 +254,11 @@
   
   footer {
     padding: 5rem 0;
+    text-shadow: none;
+  }
+
+  .social {
+    text-shadow: none;
   }
 
   body {
