@@ -16,6 +16,11 @@
     z-index: +2;
   }
 
+.navbar-brand {
+  color: red;
+  font-size: 5 rem;
+}
+
 .nav-item {
   font: bold;
   color: black;
