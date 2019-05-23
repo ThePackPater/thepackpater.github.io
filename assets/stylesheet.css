@@ -31,10 +31,6 @@ img {
   margin: 0 auto;
 }
 
-a {
-  text-shadow: none;
-}
-
 .col-lg-6 {
   text-align: center;
   text-shadow: none;
@@ -46,8 +42,8 @@ a {
     height: auto;
     min-height: 35rem;
     padding: 15rem 0;
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(22, 22, 22, 0.3)), color-stop(75%, rgba(22, 22, 22, 0.7)), to(#161616)), url("../img/bg-masthead.jpg");
-    background: linear-gradient(to bottom, rgba(22, 22, 22, 0.3) 0%, rgba(22, 22, 22, 0.7) 75%, #161616 100%), url("../img/bg-masthead.jpg");
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(22, 22, 22, 0.3)), color-stop(rgba(22, 22, 22, 0.7)), to(#161616)), url("../img/bg-masthead.jpg");
+    background: linear-gradient(to bottom, rgba(22, 22, 22, 0.3) 0%, rgba(22, 22, 22, 0.7) , black 100%), url("../img/bg-masthead.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: scroll;
@@ -56,14 +52,15 @@ a {
 }
   
 .masthead h1 {
-    font-size: 2.5rem;
-    line-height: 2.5rem;
-    letter-spacing: 0.8rem;
+    font-size: 5rem;
+    line-height: 3.5rem;
+    letter-spacing: 0.5rem;
     color: red;
+    text-shadow: 2px 2px 2px black;
 }
   
 .masthead h2 {
-    color: black;
+    color: white;
     max-width: 20rem;
     font-size: 1rem;
 }
@@ -93,17 +90,18 @@ a {
 
 .about-section {
     padding-top: 10rem;
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(22, 22, 22, 0.3)), color-stop(75%, rgba(22, 22, 22, 0.7)), to(#161616)), url("../img/bg-masthead.jpg");
-    background: linear-gradient(to bottom, rgba(22, 22, 22, 0.3) 0%, rgba(22, 22, 22, 0.7) 75%, #161616 100%), url("../img/bg-masthead.jpg");
+    text-shadow: none;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(22, 22, 22, 0.3)), color-stop( rgba(22, 22, 22, 0.7)), to(#161616)), url("../img/bg-masthead.jpg");
+    background: linear-gradient(to bottom, rgba(22, 22, 22, 0.3) 0%, rgba(22, 22, 22, 0.7), #161616 100%), url("../img/bg-masthead.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-size: cover;
 }
   
-.about-section p {
+/* .about-section p {
   margin-bottom: 5rem;
-}
+} */
 
   .projects-section {
     padding: 10rem 0;
@@ -145,8 +143,9 @@ a {
   
   a {
     color: #64a19d;
+    text-shadow: none;
   }
-  
+
   a:focus, a:hover {
     text-decoration: none;
     color: #3c6360;
@@ -163,25 +162,12 @@ a {
   .text-primary {
     color: #64a19d !important;
   }
-  
-  footer {
-    padding: 5rem 0;
-    text-shadow: none;
-  }
-
-  .social {
-    text-shadow: none;
-  }
 
   .contact-section {
     padding: 5%;
+    text-shadow: none;
+    font-weight: bolder;
   }
-
-  .icon {
-
-    font-size: 2 rem;
-  }
-
   
   body {
     background: url("backdrop.jpg") no-repeat center center fixed;
@@ -191,5 +177,5 @@ a {
     height: 100%;
     font-family: 'Special Elite';
     color: black;
-    text-shadow: 2px 2px 8px #ffffff;
+    
 }
