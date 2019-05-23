@@ -46,41 +46,46 @@
   <body>
 
 <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg" id="mainNav">
-        <a class="navbar-brand" href="#">
-            <img src="assets/ap-logo.png" width="60" height="60" alt=""><b>"Andy" Pack</b></a>
-        <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button> -->
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
-        data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
-        aria-label="Toggle navigation">
-        Menu <i class="fas fa-bars"></i>
-      </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#about">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#projects">Projects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#contact">Contact</a>
-                    </li>
-                    <li class="nav-item">
-                            <a class="nav-link active" href="https://www.linkedin.com/in/andrew-pack-045522177?trk=profile-badge" target="_blank">
-                                <i class="fab fa-linkedin"></i></a>
-                        </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="https://github.com/ThePackPater" target="_blank">
-                            <i class="fab fa-github-square"></i></a>
-                    </li>
-                </ul>
-            </div>
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+        <a class="navbar-brand" href="#"><img src="assets/ap-logo.png" width="60" height="60" alt=""> "ANDY" PACK</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#Projects"></a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                My Links
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item"  href="https://www.linkedin.com/in/andrew-pack-045522177?trk=profile-badge" target="_blank"><i class="fab fa-linkedin"></i> My linkedin</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="https://github.com/ThePackPater" target="_blank">
+                    <i class="fab fa-github-square"></i> My GitHub</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="mailto:thepackpater@gmail.com?Subject=Portfolio%20Contact"
+                target="_top"><i class="fas fa-envelope"></i> thepackpater@gmail.com</a>
+              </div>
+            </li>
+          </ul>
+         
         </div>
-    </nav>
+      </nav>
 
 <!-- Header -->
     <header class="masthead">
@@ -100,11 +105,14 @@
     
 <!-- About Section -->
     <section id="about" class="about-section text-center">
+        <br>
+        <br>
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 mx-auto">
                     <br>
                     <img id="me" src="assets/self.jpg" alt="pic of me" style="width:100%;max-width:300px">
+                    <br>
                     <br>
                     <h2 class="text-white mb-4">Andrew Pack</h2>
                     <h4 class="text-white bg-black"><br>A Full-Stack Developler bringing old school sensibility and style to any team or project. My
@@ -116,30 +124,33 @@
         <br>
         <br>
     </section>
+    <br>
+    <br>
 
 <!-- Projects Section -->
     <section id="projects" class="projects-section">
         <div class="container">
-    
-    <!-- Featured Project Row -->
+
+        <!-- Project Row -->
         <div class="row justify-content-center no-gutters">
-        <div class="col-lg-6">
-            <img class="img-fluid" src="assets/city.gif" alt="">
-        </div>
-        <div class="col-lg-6 order-lg-first">
-            <div class="bg-black text-center h-100 project">
-                <div class="d-flex h-100">
-                    <div class="project-text w-100 my-auto text-center text-lg-right">
-                        <h4 class="text-white">Old School in a New Age</h4>
-                        <p class="mb-0 text-white-50">I have the advantage of entering software development after years of management and IT experience. This gives me both a passion for learning and the ability to communicate and work in a clear goal oriented fashion with a team or individually.</p>
-                        <hr class="d-none d-lg-block mb-0 mr-0">
+                <div class="col-lg-6">
+                    <img class="img-fluid" src="assets/donut2.png" alt="">
+                </div>
+                <div class="col-lg-6 order-lg-first">
+                    <div class="bg-black text-center h-100 project">
+                        <div class="d-flex h-100">
+                            <div class="project-text w-100 my-auto text-center text-lg-right">
+                                <h4 class="text-white">Growing Skills</h4>
+                                <p class="mb-0 text-white-50">Click the Button</p>
+                                <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#skillModal" id="skills">SKILLS</button>
+                                <hr class="d-none d-lg-block mb-0 mr-0">
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
-        </div>
-    
-    <!-- Project One Row -->
+                </div>        
+
+    <!-- Project Row -->
         <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
         <div class="col-lg-6">
             <img class="img-fluid" src="assets/coffee.jpg" alt="">
@@ -157,24 +168,26 @@
             </div>
         </div>
         </div>
-    <!-- Project Two Row -->
-        <div class="row justify-content-center no-gutters">
-        <div class="col-lg-6">
-            <img class="img-fluid" src="assets/donut2.png" alt="">
-        </div>
-        <div class="col-lg-6 order-lg-first">
-            <div class="bg-black text-center h-100 project">
-                <div class="d-flex h-100">
-                    <div class="project-text w-100 my-auto text-center text-lg-right">
-                        <h4 class="text-white">Growing Skills</h4>
-                        <p class="mb-0 text-white-50">Click the Button</p>
-                        <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#skillModal" id="skills">SKILLS</button>
-                        <hr class="d-none d-lg-block mb-0 mr-0">
+        
+    <!-- Featured Row -->
+    <div class="row justify-content-center no-gutters">
+            <div class="col-lg-6">
+                <img class="img-fluid" src="assets/city.gif" alt="">
+            </div>
+            <div class="col-lg-6 order-lg-first">
+                <div class="bg-black text-center h-100 project">
+                    <div class="d-flex h-100">
+                        <div class="project-text w-100 my-auto text-center text-lg-right">
+                            <h4 class="text-white">Old School in a New Age</h4>
+                            <p class="mb-0 text-white-50">I have the advantage of entering software development after years of management and IT experience. This gives me both a passion for learning and the ability to communicate and work in a clear goal oriented fashion with a team or individually.</p>
+                            <hr class="d-none d-lg-block mb-0 mr-0">
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        </div>
+            </div>
+            
+
     
         </div>
     </section>
@@ -223,7 +236,8 @@
             </div>
             <br> 
             </div>
-            <div class="row bg-black text-center text-white">
+            <br>
+            <div class="footer row bg-black text-center text-white">
             TheBearCode 2019
             <div class="social d-flex justify-content-center">
                         <a href="https://www.linkedin.com/in/andrew-pack-045522177?trk=profile-badge"

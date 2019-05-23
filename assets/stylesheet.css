@@ -16,12 +16,6 @@
     z-index: +2;
   }
 
-
-
-.nav-item {
-  font: bold;
-}
-
 .nav-link:hover {
   background-color: tan;
   color: #ffffff
@@ -139,8 +133,6 @@ img {
     }
   }
   
- 
-  
   a {
     color: #64a19d;
     text-shadow: none;
@@ -167,6 +159,10 @@ img {
     padding: 5%;
     text-shadow: none;
     font-weight: bolder;
+  }
+
+  .footer {
+    display: inline-block;
   }
   
   body {
