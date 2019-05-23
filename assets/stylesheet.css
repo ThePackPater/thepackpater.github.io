@@ -161,9 +161,6 @@ img {
     font-weight: bolder;
   }
 
-  .footer {
-    display: inline-block;
-  }
   
   body {
     background: url("backdrop.jpg") no-repeat center center fixed;
