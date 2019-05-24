@@ -161,6 +161,27 @@ img {
     font-weight: bolder;
   }
 
+  .btn-link {
+    padding: 5%;
+    background-color:red;
+    box-shadow: 0, 5px, 0, black;
+    color: black;
+    position: relative;
+    text-decoration: none;
+    font-weight: bolder;
+  }
+
+  .btn-link:hover {
+    background-color: #ce0606;
+    color: white;
+    cursor: pointer;
+  }
+
+  .btn-link:active {
+    box-shadow: none;
+    top: 5px;
+  }
+
   
   body {
     background: url("backdrop.jpg") no-repeat center center fixed;
