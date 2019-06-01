@@ -134,13 +134,14 @@ img {
   }
   
   a {
-    color: #64a19d;
-    text-shadow: none;
+    color: red;
+    font-size: 1.1rem;
+    text-shadow: 1px 1px 1px black;
   }
 
   a:focus, a:hover {
     text-decoration: none;
-    color: #3c6360;
+    color: green;
   }
   
   .bg-black {
@@ -192,4 +193,11 @@ img {
     font-family: 'Special Elite';
     color: black;
     
+}
+
+.conCard {
+  background:url("stain.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
 }
