@@ -201,3 +201,8 @@ img {
   background-size: cover;
 
 }
+
+.note {
+  font-weight: bold;
+  font-size: .75rem;
+}
