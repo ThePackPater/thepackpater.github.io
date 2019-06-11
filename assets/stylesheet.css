@@ -168,7 +168,7 @@ img {
     box-shadow: 0, 5px, 0, black;
     color: black;
     position: relative;
-    text-decoration: none;
+    text-shadow: none;
     font-weight: bolder;
   }
 
